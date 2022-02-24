@@ -5,9 +5,100 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.pokemon-profile{
+  display: inline-block;
+  margin: 20px;
+}
+
+.pokemon-profile img{
+  width: 175px;
+  height: 202px;
+}
+
+.info div{
+  margin-top: 5px;
+  font-size: 17px;
+}
+
+.container-menu{
+  background-color: red;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 15px 0 15px 0;
+}
+
+.img-container{
+  width: 600px;
+  height: 250px;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.img-logo{
+  position: relative;
+  top: -70px;
+  width: 600px;
+  height: 350px;
+  box-sizing: content-box;
+}
+
+.poke-form{
+  width: 500px;
+}
+
+.poke-form input{
+  margin-right: 20px;
+  display: inline-block;
+  width: 300px;
+}
+
+.poke-form button{
+  color: red;
+  background-color: white;
+  transition: background-color .5s ease, color .5s ease;
+}
+
+.poke-form button:hover{
+  color: white;
+  background-color: red;
+}
+
+.card{
+  width: 16rem;
+  padding: 20px;
+  border: 3px solid red;
+  box-shadow: 0px 0px red;
+  transition: box-shadow 600ms;
+}
+
+.card:hover{
+  box-shadow: 6px 6px 5px 2px red;
+}
+
+.dropdown{
+  display: inline;
+  position: relative;
+  top: 5px;
+  margin-left: 20px;
+}
+
+.dropdown-menu{
+  min-width: 5rem;
+}
+
+.dropdown-menu li{
+  margin: 10px;
 }
