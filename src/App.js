@@ -2,7 +2,6 @@ import Form from './Form';
 import CardList from './CardList';
 import './App.css';
 import React, { useState } from 'react';
-import ReactPaginate from 'react-paginate';
 
 class App extends React.Component{
   state = {
@@ -22,6 +21,10 @@ class App extends React.Component{
 
   render(){
     const {pokemons, sortType} = this.state;
+    const {pagination, setPagination} = useState({
+      previous : 0,
+      next : 5
+    });
 
     const sorted = pokemons.sort((a,b) => {
 
@@ -46,7 +49,7 @@ class App extends React.Component{
         </div>
         
         <Form onSubmit={this.addNewPokemon} />
-        <CardList pokemons={sorted}/>
+        <CardList pokemons={sorted} pagination={pagination}/>
       </div>
     );
   }

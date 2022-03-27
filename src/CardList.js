@@ -1,4 +1,5 @@
 import Card from "./Card"
+import ReactPaginate from "react-paginate";
 
 const CardList = (props) => (
     <div>

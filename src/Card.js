@@ -13,6 +13,7 @@ class Card extends React.Component{
                             <div className="name"><strong>Base experience:</strong> {pokemon.base_experience}</div>
                             <div className="name"><strong>Height:</strong> {pokemon.height}</div>
                             <div className="name"><strong>Weight:</strong> {pokemon.weight}</div>
+                            <div className="name"><strong>Type:</strong> {pokemon.types[0].type.name}</div>
                         </div>
                     </div>
                 </div>
